@@ -106,6 +106,7 @@ header .nav-container {
   align-items: center;
   justify-content: space-between;
   background-color: #000000;
+  padding: 5px;
 }
 header .nav-container > .logo-container {
   display: none;
@@ -129,7 +130,7 @@ header .nav-container .head-nav li {
   position: relative;
 }
 header .nav-container .head-nav li .sub-menu {
-    display: none;
+  display: none;
   position: absolute;
   background-color: #000000;
   padding: 10px;
@@ -383,20 +384,21 @@ main .main-steps .steps-container .step-item .step-text {
     display: block;
   }
   .nav-container {
-    padding: 8px 20px;
+    padding: 8px 20px !important;
   }
   .nav-container .head-nav {
     display: none !important;
   }
   header .nav-container .contact {
     padding-left: 0;
+    margin: 5px 0;
     margin-right: auto;
   }
   header .nav-container .logo-container {
     display: block;
-   position: absolute;
-   right: 50%;
-   transform: translate(50%);
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
   }
   main .main-poster .main-poster-left .image-captions span {
     font-size: 1.5vw;
@@ -496,10 +498,9 @@ main .main-steps .steps-container .step-item .step-text {
   }
 
   header .nav-container .logo-container {
-    margin-right: auto ;
-     position: static;
-     right: auto;
-     transform: none;
-    
+    margin-right: auto;
+    position: static;
+    right: auto;
+    transform: none;
   }
 }
