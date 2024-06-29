@@ -491,4 +491,8 @@ main .main-steps .steps-container .step-item .step-text {
   header .nav-container .contact {
     display: none;
   }
+
+  header .nav-container .logo-container {
+    margin-right: auto ;
+  }
 }
