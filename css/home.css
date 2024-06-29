@@ -390,10 +390,13 @@ main .main-steps .steps-container .step-item .step-text {
   }
   header .nav-container .contact {
     padding-left: 0;
+    margin-right: auto;
   }
   header .nav-container .logo-container {
     display: block;
-    margin-right: 80px;
+   position: absolute;
+   right: 50%;
+   transform: translate(50%);
   }
   main .main-poster .main-poster-left .image-captions span {
     font-size: 1.5vw;
@@ -494,5 +497,9 @@ main .main-steps .steps-container .step-item .step-text {
 
   header .nav-container .logo-container {
     margin-right: auto ;
+     position: static;
+     right: auto;
+     transform: none;
+    
   }
 }

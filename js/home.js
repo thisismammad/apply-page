@@ -37,6 +37,10 @@ function closeSideMenu() {
   $(".sub-menu").slideUp(300);
   newFlag = true;
   $(".menu-btn").css("position", "relative");
+  let icon = $("aside .menu-nav-container .menu-nav li i");
+
+  icon.removeClass("fa-chevron-up");
+  icon.addClass("fa-chevron-down");
 }
 
 function openSideMenu() {
@@ -68,7 +72,7 @@ $("header .nav-container .head-nav li").on("click", function () {
       if (icon.hasClass("fa-chevron-down")) {
         icon.removeClass("fa-chevron-down");
         icon.addClass("fa-chevron-up");
-      }else{
+      } else {
         icon.removeClass("fa-chevron-up");
         icon.addClass("fa-chevron-down");
       }
@@ -77,21 +81,28 @@ $("header .nav-container .head-nav li").on("click", function () {
 
 $("aside .menu-nav-container .menu-nav li").on("click", function () {
   let e = $(this);
-  $(this).find("ul").toggle(300, function(){
-    let icon = e.find("i");
-    if (icon.hasClass("fa-chevron-down")) {
-      icon.removeClass("fa-chevron-down");
-      icon.addClass("fa-chevron-up");
-    }else{
-      icon.removeClass("fa-chevron-up");
-      icon.addClass("fa-chevron-down");
-    }
-  });
+  $(this)
+    .find("ul")
+    .toggle(300, function () {
+      let icon = e.find("i");
+      if (icon.hasClass("fa-chevron-down")) {
+        icon.removeClass("fa-chevron-down");
+        icon.addClass("fa-chevron-up");
+      } else {
+        icon.removeClass("fa-chevron-up");
+        icon.addClass("fa-chevron-down");
+      }
+    });
 });
 
 $("main").on("click", function () {
   $(".sub-menu").slideUp(300);
   newFlag = true;
+  $(".menu-btn").css("position", "relative");
+  let icon = $(" header .nav-container .head-nav li i");
+
+  icon.removeClass("fa-chevron-up");
+  icon.addClass("fa-chevron-down");
   closeSideMenu();
 });
 
