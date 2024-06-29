@@ -1,0 +1,59 @@
+@font-face {
+  font-family: iran;
+  src: url(../fonts/Yekan.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: iran;
+  color: var(--font-color);
+  border-radius: 5px;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 16px;
+
+}
+
+:root {
+  --btn-color: #f6f6f6;
+  --white-color: white;
+  --primary-color: #ffce00;
+  --back-color: #ffcc0049;
+  --bold-font-color: #21262c;
+  --font-color: #000000;
+}
+.btn {
+  background-color: var(--btn-color);
+  padding: 8px 15px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.btn-prime {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-prime span {
+  color: var(--bold-font-color)
+}
+
+a{
+    text-decoration: none;
+}
+@media screen and (max-width: 625px) {
+    html,
+    body {
+      width: 100%;
+      font-size: 14px;
+    
+    }
+}
