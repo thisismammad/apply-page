@@ -177,7 +177,7 @@ main {
 
 /* menu section */
 aside {
-  position: absolute;
+  position: fixed;
   width: 300px;
   background-color: black;
   top: 0;
@@ -187,6 +187,7 @@ aside {
   padding-top: 80px;
   border-radius: 5px 0 0 5px;
   transition: 0.35s;
+  bottom: 0;
 }
 .menu-head-container {
   display: flex;

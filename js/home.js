@@ -17,6 +17,9 @@ function closeSideMenu() {
     top: "19px",
   });
   flag = true;
+  $(".sub-menu").slideUp(300);
+  newFlag = true;
+  $(".menu-btn").css("position","relative");
 }
 
 function openSideMenu() {
@@ -33,6 +36,7 @@ function openSideMenu() {
     top: "calc(50% - 2px)",
   });
   flag = false;
+  $(".menu-btn").css("position","fixed");
 }
 
 function showHideMenu() {
@@ -53,13 +57,8 @@ $("header .nav-container .head-nav li").on("click", function () {
   $(this).find("ul").toggle(300);
 });
 
-let newFlag1 = true;
-let id;
 $("aside .menu-nav-container .menu-nav li").on("click", function () {
- 
-
   $(this).find("ul").toggle(300);
-
 });
 
 $("main").on("click", function () {
@@ -68,4 +67,4 @@ $("main").on("click", function () {
   closeSideMenu();
 });
 
-$("a").attr("href","#");
+$("a").attr("href", "#");

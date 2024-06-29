@@ -17,7 +17,7 @@ html,
 body {
   width: 100%;
   font-size: 16px;
-
+  height: 100%;
 }
 
 :root {
@@ -43,17 +43,16 @@ body {
 }
 
 .btn-prime span {
-  color: var(--bold-font-color)
+  color: var(--bold-font-color);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 @media screen and (max-width: 625px) {
-    html,
-    body {
-      width: 100%;
-      font-size: 14px;
-    
-    }
+  html,
+  body {
+    width: 100%;
+    font-size: 14px;
+  }
 }
