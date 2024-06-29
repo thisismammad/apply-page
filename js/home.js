@@ -1,14 +1,24 @@
 let flag = true;
 
-
 var prevWidth = window.innerWidth;
-window.addEventListener('resize', function() {
-    var width = window.innerWidth;
-    if (width !== prevWidth) {
-        prevWidth = width;
-        closeSideMenu();
-    }
+window.addEventListener("resize", function () {
+  var width = window.innerWidth;
+  if (width !== prevWidth) {
+    prevWidth = width;
+    closeSideMenu();
+  }
 });
+
+function showHideMenu() {
+  flag = true;
+  $(".menu-btn").on("click", function () {
+    if (flag) {
+      openSideMenu();
+    } else {
+      closeSideMenu();
+    }
+  });
+}
 
 function closeSideMenu() {
   $("aside").css({
@@ -26,7 +36,7 @@ function closeSideMenu() {
   flag = true;
   $(".sub-menu").slideUp(300);
   newFlag = true;
-  $(".menu-btn").css("position","relative");
+  $(".menu-btn").css("position", "relative");
 }
 
 function openSideMenu() {
@@ -43,29 +53,40 @@ function openSideMenu() {
     top: "calc(50% - 2px)",
   });
   flag = false;
-  $(".menu-btn").css("position","fixed");
-}
-
-function showHideMenu() {
-  flag = true;
-  $(".menu-btn").on("click", function () {
-    if (flag) {
-      openSideMenu();
-    } else {
-      closeSideMenu();
-    }
-  });
+  $(".menu-btn").css("position", "fixed");
 }
 
 showHideMenu();
 
 let newFlag = true;
 $("header .nav-container .head-nav li").on("click", function () {
-  $(this).find("ul").toggle(300);
+  let e = $(this);
+  $(this)
+    .find("ul")
+    .toggle(300, function () {
+      let icon = e.find("i");
+      if (icon.hasClass("fa-chevron-down")) {
+        icon.removeClass("fa-chevron-down");
+        icon.addClass("fa-chevron-up");
+      }else{
+        icon.removeClass("fa-chevron-up");
+        icon.addClass("fa-chevron-down");
+      }
+    });
 });
 
 $("aside .menu-nav-container .menu-nav li").on("click", function () {
-  $(this).find("ul").toggle(300);
+  let e = $(this);
+  $(this).find("ul").toggle(300, function(){
+    let icon = e.find("i");
+    if (icon.hasClass("fa-chevron-down")) {
+      icon.removeClass("fa-chevron-down");
+      icon.addClass("fa-chevron-up");
+    }else{
+      icon.removeClass("fa-chevron-up");
+      icon.addClass("fa-chevron-down");
+    }
+  });
 });
 
 $("main").on("click", function () {
