@@ -1,6 +1,13 @@
 let flag = true;
-window.addEventListener("resize", () => {
-  closeSideMenu();
+
+
+var prevWidth = window.innerWidth;
+window.addEventListener('resize', function() {
+    var width = window.innerWidth;
+    if (width !== prevWidth) {
+        prevWidth = width;
+        closeSideMenu();
+    }
 });
 
 function closeSideMenu() {
