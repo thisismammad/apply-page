@@ -554,6 +554,7 @@ main .draggable .more-corse {
 }
 main .draggable .more-corse i,span{
   color: white;
+  font-size: 1.2em;
 }
 
 main .draggable .draggable-back-pattern {
