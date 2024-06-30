@@ -417,9 +417,9 @@ main .draggable .draggable-items-container .draggable-item {
 main .draggable .draggable-items-container .draggable-item .time {
   background-color: #ffffffd2;
   position: absolute;
-  top: 15px;
-  right: 15px;
-  padding: 0 5px;
+  top: 20px;
+  right: 30px;
+  padding: 5px 10px;
   font-size: 0.8em;
 }
 
@@ -548,7 +548,7 @@ main .draggable .more-corse {
   padding: 5px 10px;
   gap: 15px;
   position: absolute;
-  bottom: -70px;
+  bottom: -60px;
   right: 50%;
   transform: translate(50%);
 }
