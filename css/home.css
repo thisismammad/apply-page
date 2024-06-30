@@ -139,7 +139,7 @@ header .nav-container .head-nav li .sub-menu {
   width: 100%;
 }
 
-.active span {
+.active > span {
   color: var(--primary-color) !important;
 }
 li.active:hover span {
@@ -374,6 +374,301 @@ main .main-steps .steps-container .step-item .step-text {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+main .draggable {
+  margin-top: 80px;
+  position: relative;
+}
+main .draggable .draggable-title {
+  text-align: center;
+}
+main .draggable .draggable-title > span {
+  padding: 8px 15px;
+  background-color: var(--back-color);
+  border-radius: 25px;
+}
+main .draggable .draggable-title h3 {
+  margin-top: 20px;
+}
+main .draggable .draggable-title h3 > span {
+  color: var(--primary-color);
+}
+main .draggable .draggable-items-container {
+  margin-top: 40px;
+  position: relative;
+}
+
+main .draggable .draggable-items-container .owl-stage-outer .owl-stage {
+  padding: 10px 0;
+}
+main .draggable .draggable-items-container .draggable-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.192);
+  border-radius: 8px;
+  background-color: white;
+  margin: 0 10px;
+}
+
+main .draggable .draggable-items-container .draggable-item .time {
+  background-color: #ffffffd2;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0 5px;
+  font-size: 0.8em;
+}
+
+main .draggable .draggable-items-container .draggable-item .time > span {
+  color: black !important;
+}
+
+main .draggable .draggable-items-container .draggable-item > img {
+  width: 100%;
+}
+main .draggable .draggable-items-container .draggable-item > span {
+  color: black !important;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+main
+  .draggable
+  .draggable-items-container
+  .draggable-item
+  .draggable-item-teacher-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
+  width: 100%;
+  margin: 20px 0;
+}
+main
+  .draggable
+  .draggable-items-container
+  .draggable-item
+  .draggable-item-teacher-price
+  .teacher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+main
+  .draggable
+  .draggable-items-container
+  .draggable-item
+  .draggable-item-teacher-price
+  .teacher
+  .teacher-profile
+  > img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+main
+  .draggable
+  .draggable-items-container
+  .draggable-item
+  .draggable-item-teacher-price
+  .teacher
+  .teacher-name {
+  display: flex;
+  flex-direction: column;
+}
+main
+  .draggable
+  .draggable-items-container
+  .draggable-item
+  .draggable-item-teacher-price
+  .teacher
+  .teacher-name
+  > span {
+  color: black !important;
+}
+main
+  .draggable
+  .draggable-items-container
+  .draggable-item
+  .draggable-item-teacher-price
+  .teacher
+  .teacher-name
+  > span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+main
+  .draggable
+  .draggable-items-container
+  .draggable-item
+  .draggable-item-teacher-price
+  .price {
+  text-align: left;
+}
+
+main
+  .draggable
+  .draggable-items-container
+  .draggable-item
+  .draggable-item-teacher-price
+  .price
+  > span
+  > span {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+main .draggable .draggable-items-container .draggable-item .draggable-item-btn {
+  background-color: var(--btn-color);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main
+  .draggable
+  .draggable-items-container
+  .draggable-item
+  .draggable-item-btn
+  > a
+  span {
+  color: rgb(105, 102, 102) !important;
+}
+main .draggable .more-corse {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 5px 10px;
+  gap: 15px;
+  position: absolute;
+  bottom: -70px;
+  right: 50%;
+  transform: translate(50%);
+}
+main .draggable .more-corse i,span{
+  color: white;
+}
+
+main .draggable .draggable-back-pattern {
+  width: 100%;
+  height: 50%;
+  background-color: #000000;
+  position: absolute;
+  top: 60%;
+  background-image: url(../images/pattern.png);
+  filter: saturate(0);
+  border-radius: 0;
+}
+
+/* draggable one secion */
+main .draggable-one {
+  margin-top: 80px;
+  position: relative;
+}
+main .draggable-one .draggable-title {
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+main .draggable-one .draggable-title > span {
+  padding: 8px 15px;
+  background-color: var(--back-color);
+  border-radius: 25px;
+}
+main .draggable-one .draggable-title h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: white;
+}
+main .draggable-one .more-corse {
+  background-color: #ffffff88;
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+main .draggable-one .more-corse span {
+  color: white;
+}
+
+main .draggable-one .draggable-title h3 > span {
+  color: var(--primary-color);
+}
+main .draggable-one .draggable-items-container {
+  margin-top: 40px;
+  position: relative;
+}
+
+main .draggable-one .draggable-items-container .owl-stage-outer .owl-stage {
+  padding: 10px 0;
+}
+main .draggable-one .draggable-items-container .draggable-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 13px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.192);
+  border-radius: 8px;
+  background-color: white;
+  margin: 0 10px;
+}
+main .draggable-one .draggable-items-container .draggable-item > i {
+  padding: 18px;
+  background-color: var(--back-color);
+  font-size: 1.5em;
+  color: var(--primary-color);
+}
+
+main .draggable-one .draggable-items-container .draggable-item > h3 {
+  color: var(--bold-font-color) !important;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+main .draggable-one .draggable-items-container .draggable-item > p {
+  color: #888787 !important;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+main .draggable-one .draggable-items-container .draggable-item > ul li {
+  color: #888787 !important;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+main .draggable-one .draggable-items-container .draggable-item > ul {
+  margin-right: 20px;
+}
+main .draggable-one .draggable-items-container .draggable-item .arrow {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+main .draggable-one .draggable-items-container .draggable-item .arrow > i {
+  background-color: var(--btn-color);
+  padding: 5px;
+  border-radius: 25px;
+}
+
+main .draggable-one .draggable-back-pattern {
+  width: 100%;
+  height: 70%;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  background-image: url(../images/pattern.png);
+  filter: saturate(0);
+  border-radius: 0;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1024px) {
