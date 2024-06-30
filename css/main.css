@@ -33,6 +33,7 @@ body {
   padding: 8px 15px;
   font-size: 0.9em;
   cursor: pointer;
+  color: var(--bold-font-color);
 }
 .btn-prime {
   background-color: var(--primary-color);

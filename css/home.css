@@ -324,6 +324,7 @@ main .main-steps {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
 }
 main .main-steps .top-steps {
   display: flex;
@@ -556,7 +557,11 @@ main .draggable .more-corse {
   right: 50%;
   transform: translate(50%);
 }
-main .draggable .more-corse i,span{
+main .draggable .more-corse i{
+  color: white;
+  font-size: 1.2em;
+}
+main .draggable .more-corse span{
   color: white;
   font-size: 1.2em;
 }
@@ -750,7 +755,6 @@ main .draggable-one .draggable-back-pattern {
     font-size: 1em;
   }
   main .main-poster .main-poster-left .image-captions strong {
-    color: var(--bold-font-color);
     font-size: 1em;
   }
 
