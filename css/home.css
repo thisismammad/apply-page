@@ -20,14 +20,14 @@ header {
   position: relative;
   width: 25px;
   height: 25px;
-  z-index: 2;
+  z-index: 3;
 }
 .menu-btn span {
   width: 90%;
   height: 3px;
   background-color: var(--white-color);
   position: absolute;
-  z-index: 1;
+  z-index: 4;
   transition: 0.35s;
 }
 
@@ -183,7 +183,7 @@ aside {
   background-color: black;
   top: 0;
   right: -100%;
-  z-index: 1;
+  z-index: 2;
   padding: 20px;
   padding-top: 80px;
   border-radius: 5px 0 0 5px;
@@ -617,7 +617,7 @@ width: 50%;
 main .main-texts .bottom .right .turist-pic{
   position: absolute;
   width: 30%;
-  border: 10px solid white;
+  border: 5px solid white;
 }
 main .main-texts .bottom .right :nth-of-type(2){
   border-radius: 90px;
