@@ -173,7 +173,7 @@ header .nav-container .contact span {
   color: var(--primary-color);
 }
 main {
-  margin: 0 20px;
+  margin: 0;
 }
 
 /* menu section */
@@ -248,6 +248,7 @@ aside .menu-nav-container .menu-nav li .menu-item i {
 main .main-poster {
   display: flex;
   gap: 50px;
+  padding: 0 20px;
 }
 main .main-poster .main-poster-right {
   flex: 3;
