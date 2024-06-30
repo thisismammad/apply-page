@@ -338,8 +338,8 @@ main .main-steps .top-steps .guide-text {
   border-radius: 25px;
   width: max-content;
 }
-main .main-steps .top-steps .guide-text>span {
- color: var(--primary-color);
+main .main-steps .top-steps .guide-text > span {
+  color: var(--red-color);
 }
 
 main .main-steps .steps-container {
@@ -397,7 +397,7 @@ main .draggable .draggable-title h3 {
   margin-top: 20px;
 }
 main .draggable .draggable-title h3 > span {
-  color: var(--primary-color);
+  color: var(--red-color);
 }
 main .draggable .draggable-items-container {
   margin-top: 40px;
@@ -557,12 +557,12 @@ main .draggable .more-corse {
   right: 50%;
   transform: translate(50%);
 }
-main .draggable .more-corse i{
-  color: white;
+main .draggable .more-corse i {
+  color: var(--red-color);
   font-size: 1.2em;
 }
-main .draggable .more-corse span{
-  color: white;
+main .draggable .more-corse span {
+  color: var(--red-color);
   font-size: 1.2em;
 }
 
@@ -611,7 +611,7 @@ main .draggable-one .more-corse span {
 }
 
 main .draggable-one .draggable-title h3 > span {
-  color: var(--primary-color);
+  color: var(--red-color);
 }
 main .draggable-one .draggable-items-container {
   margin-top: 40px;

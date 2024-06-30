@@ -27,6 +27,7 @@ body {
   --back-color: #ffcc0049;
   --bold-font-color: #21262c;
   --font-color: #000000;
+  --red-color: #d00000;
 }
 .btn {
   background-color: var(--btn-color);
