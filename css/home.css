@@ -336,6 +336,9 @@ main .main-steps .top-steps .guide-text {
   border-radius: 25px;
   width: max-content;
 }
+main .main-steps .top-steps .guide-text>span {
+ color: var(--primary-color);
+}
 
 main .main-steps .steps-container {
   display: grid;
