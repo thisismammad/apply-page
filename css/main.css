@@ -16,8 +16,10 @@
 html,
 body {
   width: 100%;
-  font-size: 16px;
   height: 100%;
+}
+body{
+  font-size: 16px;
 }
 
 :root {
@@ -48,16 +50,13 @@ body {
   color: var(--bold-font-color);
 }
 li{
-  font-size: 0.9em;
+  font-size: 1em !important;
 }
-
 a {
   text-decoration: none;
 }
 @media screen and (max-width: 625px) {
-  html,
   body {
-    width: 100%;
     font-size: 14px;
   }
 }
