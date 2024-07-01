@@ -643,13 +643,14 @@ main .main-texts .bottom .left > h1 span {
 main .main-texts .bottom .left .discription {
   margin: 20px 0;
 }
+main .main-texts .bottom .left .discription *{
+  font-size: 0.9em m !important;
+}
 main .main-texts .bottom .left .discription > p {
   color: #888787;
-  font-size: 0.9em;
 }
 main .main-texts .bottom .left .discription > ul {
   margin-right: 20px;
-  color: #888787;
 }
 main .main-texts .bottom .left .discription > ul li {
   color: #888787;
