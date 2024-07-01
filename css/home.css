@@ -690,14 +690,14 @@ main .main-texts .bottom .insta .text-link > p {
 main .main-texts .bottom .insta .text-link > span {
   font-weight: bold;
   font-size: 1.2em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: var(--white-color);
 }
-main .main-texts .bottom .insta > span a{
+main .main-texts .bottom .insta > span a {
   color: var(--white-color);
   border: 2px solid white;
   padding: 5px 10px;
-cursor: pointer;
+  cursor: pointer;
 }
 
 /* draggable one secion */
@@ -794,25 +794,21 @@ main .draggable .draggable-items-container .draggable-item .arrow {
   gap: 10px;
   align-items: center;
 }
-main .draggable .draggable-items-container .draggable-item .arrow >i{
- color: var(--primary-color);
+main .draggable .draggable-items-container .draggable-item .arrow > i {
+  color: var(--primary-color);
 }
-main .draggable .draggable-items-container .draggable-item .arrow >span{
- color: var(--primary-color);
+main .draggable .draggable-items-container .draggable-item .arrow > span {
+  color: var(--primary-color);
 }
 main .draggable .draggable-items-container .draggable-item > h4 {
   margin: 10px 0;
 }
 
-
-main .draggable .draggable-title .title{
-  
-}
-main .draggable .draggable-title .title>span{
-background-color: var(--back-color);
-padding: 10px 20px;
-border-radius: 50px;
-color: var(--red-color);
+main .draggable .draggable-title .title > span {
+  background-color: var(--back-color);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: var(--red-color);
 }
 
 main .draggable-one .draggable-items-container .draggable-item .arrow > i {
@@ -831,6 +827,66 @@ main .draggable-one .draggable-back-pattern {
   filter: saturate(0);
   border-radius: 0;
   z-index: -1;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0;
+  padding: 20px;
+  position: relative;
+}
+footer * {
+  color: rgb(201, 196, 196);
+}
+
+footer .footer-background {
+  position: absolute;
+  background-image: url(../images/footer-pattern.png);
+  filter: saturate(0);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+footer .footer-sec {
+  flex: 1;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+footer .footer-sec > .title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+footer .footer-sec > .title > span {
+  display: inline-block;
+  width: 12px;
+  height: 30px;
+  background-color: var(--red-color);
+}
+footer .footer-sec > .title > h4 {
+  display: inline-block;
+}
+footer .footer-sec > ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+footer .footer-sec .social > a {
+  display: inline-block;
+  margin-left: 10px;
+}
+footer .footer-sec .social > a > i {
+  font-size: 2.5em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -867,12 +923,12 @@ main .draggable-one .draggable-back-pattern {
     font-size: 2vw;
   }
 }
-@media screen and (max-width:840px) {
+@media screen and (max-width: 840px) {
   main .main-texts .bottom .insta {
-    justify-content:space-between;
+    justify-content: space-between;
   }
   main .main-texts .bottom .insta > img {
-   display: none;
+    display: none;
   }
   main .main-texts {
     margin-left: 0;
@@ -891,11 +947,10 @@ main .draggable-one .draggable-back-pattern {
     border-radius: 0;
     gap: 0;
   }
-  main .main-texts .bottom .insta > span a{
+  main .main-texts .bottom .insta > span a {
     display: none;
-   }
+  }
 }
-
 
 @media screen and (max-width: 768px) {
   main .main-texts .bottom {
@@ -905,7 +960,20 @@ main .draggable-one .draggable-back-pattern {
   main .main-texts .bottom .right {
     margin-bottom: 30px;
   }
-
+  footer{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .footer-sec{
+    width: 100%;
+  }
+  footer .footer-sec:nth-of-type(1){
+   text-align: center;
+  }
+  footer .footer-sec>.logo-container{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 599px) {
