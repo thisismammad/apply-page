@@ -382,7 +382,7 @@ main .main-steps .steps-container .step-item .step-text {
 }
 
 main .draggable {
-  margin-top: 80px;
+  margin-top: 50px;
   position: relative;
 }
 main .draggable .draggable-title {
@@ -579,7 +579,7 @@ main .draggable .draggable-back-pattern {
 
 main .main-texts {
   margin: 0 20px;
-  margin-top: 100px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -587,7 +587,7 @@ main .main-texts {
 
 main .main-texts .top {
   text-align: center;
-  /* max-width: 80%; */
+ margin: 50px 0;
 }
 main .main-texts .top > i {
   font-size: 2.2em;
@@ -600,7 +600,7 @@ main .main-texts .top > p {
 }
 main .main-texts .bottom {
   display: flex;
-  margin-top: 100px;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -660,7 +660,7 @@ main .main-texts .bottom .left > .btn-prime {
 }
 main .main-texts .bottom {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 main .main-texts .bottom .insta {
   position: relative;
@@ -921,6 +921,10 @@ footer .footer-sec .social > a > i {
   }
 }
 @media screen and (max-width: 840px) {
+  main .main-texts .bottom {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   main .main-texts .bottom .insta {
     justify-content: space-between;
   }
@@ -957,21 +961,21 @@ footer .footer-sec .social > a > i {
   main .main-texts .bottom .right {
     margin-bottom: 30px;
   }
-  footer{
+  footer {
     flex-direction: column-reverse;
     align-items: center;
     gap: 20px;
   }
-  footer .footer-sec{
+  footer .footer-sec {
     width: 100%;
   }
-  footer .footer-sec:nth-of-type(1){
-   text-align: center;
+  footer .footer-sec:nth-of-type(1) {
+    text-align: center;
   }
-  footer .footer-sec:nth-of-type(2){
-  order: 1;
+  footer .footer-sec:nth-of-type(2) {
+    order: 1;
   }
-  footer .footer-sec>.logo-container{
+  footer .footer-sec > .logo-container {
     display: none;
   }
 }
