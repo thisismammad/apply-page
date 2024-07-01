@@ -54,3 +54,32 @@ owl2.on("mousewheel", ".owl-stage", function (e) {
   }
   e.preventDefault();
 });
+
+
+let owl3 = $("#owl-product3").owlCarousel({
+  loop: true,
+  rtl: true,
+  margin: 0,
+  dots: false,
+  nav: false,
+  center: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 4,
+    },
+  },
+});
+owl3.on("mousewheel", ".owl-stage", function (e) {
+  if (e.deltaY > 0) {
+    owl3.trigger("next.owl");
+  } else {
+    owl3.trigger("prev.owl");
+  }
+  e.preventDefault();
+});

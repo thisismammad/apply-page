@@ -48,7 +48,7 @@ body {
   color: var(--bold-font-color);
 }
 li{
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 a {
