@@ -74,10 +74,10 @@ header {
   background-color: transparent;
 }
 .search-box input::-webkit-input-placeholder {
-  color: #e2e2e2;
+  color: #b6b6b6;
 }
 .search-box i {
-  color: #e2e2e2;
+  color: #b6b6b6;
 }
 .head-left .btn-prime {
   display: flex;
